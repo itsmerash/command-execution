@@ -1,0 +1,35 @@
+# 1. Configure Git with your name and email globally
+git config --global user.name "itsmerash"
+git config --global user.email "4rashmir@gmail.com"
+
+# 2. Clone the project repository from GitHub
+git clone https://github.com/example/repo.git
+
+
+# 3. Navigate into the cloned repository
+cd repo
+
+# 4. Create and switch to a new feature branch
+git checkout -b new-feature
+
+# 5. Add a new file called feature.py to your branch
+touch feature.py  # This command creates an empty feature.py file
+git add feature.py
+
+# 6. Commit your changes with a message
+git commit -m "Add new feature implementation"
+
+# 7. Push your changes to the remote repository
+git push origin new-feature
+
+# 8. Pull the latest changes from the main branch
+git pull origin main
+
+# 9. Remove the feature.py file from your branch
+git rm feature.py
+
+# 10. Commit the removal of the file
+git commit -m "Remove feature.py file"
+
+# 11. Push the changes to the remote repository
+git push origin new-feature
